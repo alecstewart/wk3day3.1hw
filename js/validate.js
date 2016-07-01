@@ -5,7 +5,7 @@ function validate(form) {
       phone = form.querySelector('#phone'),
       comment = form.querySelector('#comment'),
 
-      if (name.value.length < 2 && name.value.length !== 0){
+      if (name.value.length < 2){
         return false
       }
       else if (phone.value.match(/\d/g) !== null && phone.value.match(/\d/g).length === 10){
